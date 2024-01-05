@@ -34,7 +34,11 @@ class _AcademicsState extends State<Academics> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CardBox(icon: Icons.abc,title: "Materials",),
+                CardBox(
+                  icon: Icons.person,
+                  title: "Attendance",
+                  // onPressed: () => Navigator.pushNamed(context, routeName),
+                  ),
                 CardBox(
                   icon: Icons.book, 
                   title: "Marks",
@@ -49,8 +53,35 @@ class _AcademicsState extends State<Academics> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CardBox(icon: Icons.schedule, title: 'Time-Table',),
-                CardBox(icon: Icons.person_4, title: "Mentorship",),
+                CardBox(
+                  icon: Icons.library_books, 
+                  title: "Syllabus",
+                  // onPressed: () => Navigator.pushNamed(context, routeName),
+                  ),
+                  CardBox(
+                  icon: Icons.calendar_month_outlined, 
+                  title: "Assigments",
+                  // onPressed: () => Navigator.pushNamed(context, routeName),
+                  ),
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                CardBox(
+                  icon: Icons.people_outline, 
+                  title: "Mentorship",
+                  // onPressed: () => Navigator.pushNamed(context, routeName),
+                  ),
+                CardBox(
+                  icon: Icons.calculate_outlined, 
+                  title: 'CGPA Calculator',
+                  // onPressed: () => Navigator.pushNamed(context, routeName),
+                  ),
               ],
             ),
           ],
