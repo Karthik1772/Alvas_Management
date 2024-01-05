@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                 width: 200,
                 height: 200,
-                child: Image.asset("assets/alvas_logo.png")),
+                child: Image.asset("assets/logo.png")),
               Feild(
                 name: "email",
                 icon: Icons.email_outlined,

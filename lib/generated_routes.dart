@@ -1,8 +1,9 @@
-import 'package:alvas_mangment/pages/Academics.dart';
+import 'package:alvas_mangment/pages/Academics/Academics.dart';
+import 'package:alvas_mangment/pages/Academics/Marks_page/Marks.dart';
 import 'package:alvas_mangment/pages/homepage.dart';
-import 'package:alvas_mangment/pages/hostel.dart';
-import 'package:alvas_mangment/pages/library.dart';
-import 'package:alvas_mangment/pages/profile.dart';
+import 'package:alvas_mangment/pages/Hostel/Hostel.dart';
+import 'package:alvas_mangment/pages/Library/library.dart';
+import 'package:alvas_mangment/pages/Clubs/Clubs.dart';
 
 import 'pages/loginpage.dart';
 import 'package:flutter/material.dart';
@@ -25,15 +26,19 @@ class Routes {
         );
         case '/academics':
         return MaterialPageRoute(
-          builder: (context) => const Academics()
+          builder: (context) => const AcadamicsPage()
         );
-        case '/profile':
+        case '/marks':
         return MaterialPageRoute(
-          builder: (context) => const Profile()
+          builder: (context) =>  Academic_Marks()
+        );
+        case '/clubs':
+        return MaterialPageRoute(
+          builder: (context) => const ClubPage()
         );
         case '/library':
         return MaterialPageRoute(
-          builder: (context) => const Library()
+          builder: (context) => const LibraryPage()
         );
         case '/hostel':
         return MaterialPageRoute(
