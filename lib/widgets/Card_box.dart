@@ -8,31 +8,34 @@ class CardBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      width: 170,
-      height: 170,
-      child: Card(
-        elevation: 10,
-        surfaceTintColor: Colors.transparent,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            Icon(
-              icon,
-              weight: 10,
-              size: 80,
-            ),
-            Text(
-              title,
-              style: GoogleFonts.varelaRound(
-                  color: Colors.black,
-                  fontWeight: FontWeight.normal,
-                  fontSize: 16),
-            ),
-            const SizedBox(
-              height: 10,
-            )
-          ],
+    return GestureDetector(
+      onTap: onPressed,
+      child: SizedBox(
+        width: 170,
+        height: 170,
+        child: Card(
+          elevation: 10,
+          surfaceTintColor: Colors.transparent,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(
+                icon,
+                weight: 10,
+                size: 80,
+              ),
+              Text(
+                title,
+                style: GoogleFonts.varelaRound(
+                    color: Colors.black,
+                    fontWeight: FontWeight.normal,
+                    fontSize: 16),
+              ),
+              const SizedBox(
+                height: 10,
+              )
+            ],
+          ),
         ),
       ),
     );

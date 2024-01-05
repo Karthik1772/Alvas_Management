@@ -35,7 +35,7 @@ class _FeildState extends State<Feild> {
             borderRadius: BorderRadius.circular(10),
           ),
           labelText: widget.name,
-          prefixIcon: Icon(widget.icon),
+          prefixIcon: Icon(widget.icon,color:Colors.black),
           errorText: widget.errorMessage,
           suffixIcon: widget.passwordIcon !=null
           ? IconButton(
@@ -44,7 +44,7 @@ class _FeildState extends State<Feild> {
               widget.hideText=!widget.hideText!;
             });
           }, 
-          icon: Icon(widget.passwordIcon),
+          icon: Icon(widget.passwordIcon,color:Colors.black),
           )
           :null,
         ),

@@ -1,15 +1,14 @@
 import 'package:alvas_mangment/widgets/Card_box.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-class Academics extends StatefulWidget {
-  const Academics({super.key});
+class Marks extends StatefulWidget {
+  const Marks({super.key});
 
   @override
-  State<Academics> createState() => _AcademicsState();
+  State<Marks> createState() => _MarksState();
 }
 
-class _AcademicsState extends State<Academics> {
+class _MarksState extends State<Marks> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -17,7 +16,7 @@ class _AcademicsState extends State<Academics> {
         appBar: AppBar(
           backgroundColor: Colors.orange,
           title: Text(
-            'Academics',
+            'Marks',
             style: GoogleFonts.varelaRound(
                 color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),
           ),
@@ -29,28 +28,21 @@ class _AcademicsState extends State<Academics> {
         ),
         body: Column(
           children: [
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                CardBox(icon: Icons.abc,title: "Materials",),
                 CardBox(
-                  icon: Icons.book, 
-                  title: "Marks",
-                  onPressed: () => Navigator.pushNamed(context, '/marks'),
+                  icon: Icons.auto_graph,
+                  title: "IA_Marks",
+                  onPressed: () => Navigator.pushNamed(context, '/ia')
                   ),
-              ],
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CardBox(icon: Icons.schedule, title: 'Time-Table',),
-                CardBox(icon: Icons.person_4, title: "Mentorship",),
+                CardBox(
+                  icon: Icons.account_balance_wallet_rounded, 
+                  title: "Sem Marks",
+                  onPressed: () => Navigator.pushNamed(context, '/sem'),
+                  ),
               ],
             ),
           ],

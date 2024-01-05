@@ -1,22 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:alvas_mangment/pages/Academics/Academics.dart';
-
-class Academic_Marks extends StatefulWidget {
-
+import 'package:google_fonts/google_fonts.dart';
+class Ia_marks extends StatefulWidget {
+  const Ia_marks({super.key});
 
   @override
-  State<Academic_Marks> createState() => _Academic_MarksState();
+  State<Ia_marks> createState() => _Ia_marksState();
 }
 
-class _Academic_MarksState extends State<Academic_Marks> {
-
+class _Ia_marksState extends State<Ia_marks> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Marks'),
+          title: Text('IA Marks',style: GoogleFonts.varelaRound(
+                color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),),
           backgroundColor: Colors.orange,
         ),
         body: Column(
@@ -203,4 +202,3 @@ class _Academic_MarksState extends State<Academic_Marks> {
     );
   }
 }
-
