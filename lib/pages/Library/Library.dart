@@ -61,7 +61,7 @@ class LibraryPage extends StatelessWidget {
                           ],
                           pointers:const [
                             NeedlePointer(
-                              value: 90,
+                              value: 50,
                             ),
                           ],
                         ),
