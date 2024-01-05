@@ -18,8 +18,9 @@ class _HomePageState extends State<HomePage> {
                 style: GoogleFonts.varelaRound(
                     color: Colors.white,
                     fontSize: 25,
-                    fontWeight: FontWeight.bold)),
-            backgroundColor: Colors.orange),
+                    fontWeight: FontWeight.bold,)),
+            backgroundColor: Colors.orange,
+            ),
         drawer: customDrawer(context),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
