@@ -12,7 +12,12 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text('PROFILE        ',style: GoogleFonts.varelaRound(fontSize: 25,color: Colors.white),)),
+        title: Center(child: Text('PROFILE        ',
+        style: GoogleFonts.varelaRound(
+                    color: Colors.white,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold)
+        )),
         backgroundColor: Colors.orange,
       ),
     );

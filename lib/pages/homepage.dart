@@ -27,31 +27,34 @@ class _HomePageState extends State<HomePage> {
             Container(
               margin: const EdgeInsets.only(
                   left: 10, right: 10, top: 5, bottom: 10),
-              child: Card(
-                elevation: 10,
-                surfaceTintColor: Colors.transparent,
-                child: ListTile(
-                  leading: const CircleAvatar(
-                    radius: 30,
-                  ),
-                  title: Text(
-                    'KARTHIK.S',
-                    overflow: TextOverflow.ellipsis,
-                    maxLines: 1,
-                    style: GoogleFonts.varelaRound(
-                        color: Colors.black,
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: Text(
-                    '4AL22EC032',
-                    style: GoogleFonts.varelaRound(
-                        color: Colors.grey, fontSize: 18),
-                  ),
-                  trailing: const Icon(
-                    Icons.arrow_forward_ios_rounded,
-                    size: 30,
-                    color: Colors.black,
+              child: GestureDetector(
+                onTap: () => Navigator.pushNamed(context,'/profile'),
+                child: Card(
+                  elevation: 10,
+                  surfaceTintColor: Colors.transparent,
+                  child: ListTile(
+                    leading: const CircleAvatar(
+                      radius: 30,
+                    ),
+                    title: Text(
+                      'KARTHIK.S',
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 1,
+                      style: GoogleFonts.varelaRound(
+                          color: Colors.black,
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    subtitle: Text(
+                      '4AL22EC032',
+                      style: GoogleFonts.varelaRound(
+                          color: Colors.grey, fontSize: 18),
+                    ),
+                    trailing: const Icon(
+                      Icons.arrow_forward_ios_rounded,
+                      size: 30,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),

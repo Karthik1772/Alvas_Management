@@ -6,6 +6,7 @@ import 'package:alvas_mangment/pages/homepage.dart';
 import 'package:alvas_mangment/pages/Hostel/Hostel.dart';
 import 'package:alvas_mangment/pages/Library/library.dart';
 import 'package:alvas_mangment/pages/Clubs/Clubs.dart';
+import 'package:alvas_mangment/pages/profile.dart';
 
 import 'pages/loginpage.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,10 @@ class Routes {
         case '/homepage':
         return MaterialPageRoute(
           builder: (context) => const HomePage()
+        );
+        case '/profile':
+        return MaterialPageRoute(
+          builder: (context) => const Profile()
         );
         case '/academics':
         return MaterialPageRoute(
