@@ -1,5 +1,6 @@
 import'package:flutter/material.dart';
 import'package:google_fonts/google_fonts.dart';
+import 'package:alvas_mangment/widgets/Card_box.dart';
 class Hostel extends StatefulWidget {
   const Hostel({super.key});
 
@@ -14,6 +15,29 @@ class _HostelState extends State<Hostel> {
       appBar: AppBar(
         title: Center(child: Text('HOSTEL        ',style: GoogleFonts.varelaRound(fontSize: 25,color: Colors.white),)),
         backgroundColor: Colors.orange,
+      ),
+      body: SafeArea(
+        child: Column(
+          children: [
+            SizedBox(height: 20,),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                CardBox(
+                  icon: Icons.person,
+                  title: "Name",
+                  // onPressed: () => Navigator.pushNamed(context, routeName),
+                  ),
+                CardBox(
+                  icon: Icons.book, 
+                  title: "Room",
+                  // onPressed: () => Navigator.pushNamed(context, '/marks'),
+                  ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
