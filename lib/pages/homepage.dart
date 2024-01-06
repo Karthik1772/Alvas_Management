@@ -18,7 +18,9 @@ class _HomePageState extends State<HomePage> {
                 style: GoogleFonts.varelaRound(
                     color: Colors.white,
                     fontSize: 25,
-                    fontWeight: FontWeight.bold,)),
+                    fontWeight: FontWeight.bold,)
+                    ),
+                    iconTheme: IconThemeData(color: Colors.white),
             backgroundColor: Colors.orange,
             ),
         drawer: customDrawer(context),
