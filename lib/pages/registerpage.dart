@@ -79,7 +79,7 @@ class _MyWidgetState extends State<RegisterPage> {
                 onpressed: (){
                   Navigator.pushNamed(context, '/homepage');
                 }
-                ),
+              ),
             ],
           ),
         ),
