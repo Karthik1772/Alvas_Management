@@ -34,7 +34,8 @@ class _HomePageState extends State<HomePage> {
                   elevation: 10,
                   surfaceTintColor: Colors.transparent,
                   child: ListTile(
-                    leading: const CircleAvatar(
+                    leading:  CircleAvatar(
+                      backgroundImage:AssetImage('assets/download.jpg'),
                       radius: 30,
                     ),
                     title: Text(
