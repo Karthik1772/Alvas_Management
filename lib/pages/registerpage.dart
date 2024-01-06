@@ -15,6 +15,8 @@ class _MyWidgetState extends State<RegisterPage> {
   final TextEditingController _usnController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _confirmpasswordController = TextEditingController();
+  final TextEditingController _otpController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,6 +61,16 @@ class _MyWidgetState extends State<RegisterPage> {
                 name: "Password", 
                 icon: Icons.password_rounded, 
                 controller: _passwordController
+                ),
+                Feild(
+                name: "Confirm Password", 
+                icon: Icons.password_rounded, 
+                controller: _confirmpasswordController
+                ),
+                Feild(
+                name: "OTP", 
+                icon: Icons.fiber_pin_outlined, 
+                controller: _otpController
                 ),
               Buttons(
                 colors: Colors.orange, 
