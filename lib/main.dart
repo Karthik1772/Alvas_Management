@@ -1,4 +1,5 @@
 import 'package:alvas_mangment/generated_routes.dart';
+import 'package:alvas_mangment/pages/loginpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: Routes.onGenerate,
       initialRoute: '/login',
