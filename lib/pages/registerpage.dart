@@ -16,7 +16,7 @@ class _MyWidgetState extends State<RegisterPage> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _confirmpasswordController = TextEditingController();
-  final TextEditingController _otpController = TextEditingController();
+  final TextEditingController _branchController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,6 +52,11 @@ class _MyWidgetState extends State<RegisterPage> {
                 icon: Icons.perm_identity_sharp, 
                 controller: _usnController
                 ),
+                Feild(
+                name: "Branch", 
+                icon: Icons.account_balance_sharp, 
+                controller: _branchController
+                ),
               Feild(
                 name: "Email", 
                 icon: Icons.email_outlined, 
@@ -66,11 +71,6 @@ class _MyWidgetState extends State<RegisterPage> {
                 name: "Confirm Password", 
                 icon: Icons.password_rounded, 
                 controller: _confirmpasswordController
-                ),
-                Feild(
-                name: "OTP", 
-                icon: Icons.fiber_pin_outlined, 
-                controller: _otpController
                 ),
               Buttons(
                 colors: Colors.orange, 

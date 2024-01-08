@@ -40,8 +40,8 @@ dependencies:
 dev_dependencies:
   google_fonts: any
   syncfusion_flutter_gauges: any
-  flutter_spinkit: any
   another_flutter_splash_screen: any
+  flutter_launcher_icons: 0.13.1
   flutter_test:
     sdk: flutter
 
@@ -53,12 +53,24 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_bloc: any
   bloc: any
-  flutter_native_splash: any
     
-flutter_native_splash:
-  color: "#ffffff"
-android_12:
-  color: "#ffffff"
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/app.png"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/app.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/app.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
