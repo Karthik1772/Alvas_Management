@@ -41,7 +41,7 @@ dev_dependencies:
   google_fonts: any
   syncfusion_flutter_gauges: any
   flutter_spinkit: any
-  animated_splash_screen: any
+  another_flutter_splash_screen: any
   flutter_test:
     sdk: flutter
 

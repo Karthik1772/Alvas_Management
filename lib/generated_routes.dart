@@ -7,6 +7,7 @@ import 'package:alvas_mangment/pages/Hostel/Hostel.dart';
 import 'package:alvas_mangment/pages/Library/library.dart';
 import 'package:alvas_mangment/pages/Clubs/Clubs.dart';
 import 'package:alvas_mangment/pages/profile/profile.dart';
+import 'package:alvas_mangment/splash.dart';
 
 import 'pages/loginpage.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +16,10 @@ import 'pages/registerpage.dart';
 class Routes {
   static Route? onGenerate(RouteSettings settings) {
     switch (settings.name) {
+      case '/splash':
+        return MaterialPageRoute(
+          builder: (context) => const Splash(),
+        );
       case '/login':
         return MaterialPageRoute(
           builder: (context) => const LoginPage(),
