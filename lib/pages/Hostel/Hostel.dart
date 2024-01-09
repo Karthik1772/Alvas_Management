@@ -25,15 +25,34 @@ class _HostelState extends State<Hostel> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 CardBox(
-                  icon: Icons.person,
-                  title: "Name",
+                  icon: Icons.access_time,
+                  title: "Outing History",
                   // onPressed: () => Navigator.pushNamed(context, routeName),
                   ),
                 CardBox(
-                  icon: Icons.book, 
-                  title: "Room",
+                  icon: Icons.home_outlined, 
+                  title: "Home history",
                   // onPressed: () => Navigator.pushNamed(context, '/marks'),
                   ),
+              ],
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                CardBox(
+                  icon: Icons.library_books_outlined,
+                  title: "Complaints",
+                  // onPressed: () => Navigator.pushNamed(context, routeName),
+                  ),
+                // CardBox(
+                //   icon: Icons.book, 
+                //   title: "Home history",
+                //   // onPressed: () => Navigator.pushNamed(context, '/marks'),
+                //   ),
               ],
             ),
           ],
